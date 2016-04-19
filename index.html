@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- 
+	DEPENDANCIES:
+		JQuery
+		Bootstrap
+		corporate: 
+		   misc.js
+		   main.css
+		drvic10k/bootstrap-sortable (for sortable tables) source: https://github.com/drvic10k/bootstrap-sortable 
+		w3-include-HTML.js          (for AJAX file loads) source: http://www.w3schools.com/howto/howto_html_include.asp 
+
+--> 
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>onRouteBC</title>
+
+    <!-- Bootstrap -->
+<!-- using bootstrap CSS from CMS -->
+<link rel="stylesheet" href="http://www2.gov.bc.ca/StaticWebResources/static/shared/bootstrap-3.2.0/css/bootstrap.min.css">
+
+<!-- add in table sorting CSS -->
+<link rel="stylesheet" href="css/bootstrap-sortable.css">
+
+<!-- modifyDefaults.css contains any deviations in style from corporate -->  
+<link rel="stylesheet" href="css/modifyDefaults.css">
+
+
+<!-- Optional theme -- NOT USING THIS -->
+<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" -->
+
+<!-- using designated CSS from CMS -->
+<link rel="stylesheet" href="http://www2.gov.bc.ca/StaticWebResources/static/gov3/css/main.css">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://www2.gov.bc.ca/StaticWebResources/static/shared/scripts/jquery/jquery-1.11.1.min.js"></script>
+<style>
+</style>
+
+<script>
+
+// After document loads ...
+$( document ).ready( function() {
+ 
+});
+
+
+</script>
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<div id="header" class="collapsed-header">
+<div id="header-main">	<!--  navbar-default navbar-fixed-top -->
+		
+   <div style="display: block;" class="container">				
+      <div id="header-main-row1" class="row">
+         <div class="col-sm-2 col-md-2 col-lg-2 header-main-left">                  <!-- CUSTOM: page logo container, column widths are modified from the original default of lass="col-sm-2 col-md-2 col-lg-2 header-main-left" -->
+            <div id="logo">
+               <a href="http://gov.bc.ca/gov/content/home"><img src="http://www2.gov.bc.ca/assets/gov/home/gov3_bc_logo.png" alt="Government of B.C." title="Government of B.C."></a>
+            </div>
+         </div>
+         <div class="col-sm-4">   <!-- CUSTOM - this DIV is added -->
+            <h1 id="customizedTitle">onRoute<span style="color:#f6a01b;">BC</span></h1>   <!-- PAGE CONTENT TITLE -->
+         </div>
+      </div>
+   </div>
+
+
+   <!-- div class="navigationRibbon">		
+      <div class="level2Navigation">
+         <div class="container">
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Bulletins, Compliance Circulars, Forms & Notices</a>
+            <a href="">Information & Education</a>
+            <a href="">National Safety Code</a>
+            <a href="">Enforcement</a>
+         </div>
+      </div>					
+   </div -->
+</div>
+      </div>
+
+      <div id="topicTemplate" class="template container-fluid" w3-include-HTML="core.html"  style="padding-top:30px; background: url(img/ministry1.png) left center no-repeat; 	background-size: cover;"></div> <!-- container-fluid -->
+
+<!-- FOOTER START -->
+<div id="footer">
+	<!-- img style="display: inline;" src="http://www2.gov.bc.ca/StaticWebResources/static/gov3/images/back-to-top.png" alt="Back to top" title="Back to top" class="back-to-top footer-overlap" -->
+	<div id="footerWrapper">
+		<!-- div id="footerToggle">
+			<a class="footerExpand" href="#"><img src="/StaticWebResources/static/gov3/images/footer_expandbutton_solid.png" alt="Expand footer" title="Expand footer"></a>
+			<a class="footerCollapse" href="#" style="display:none"><img src="/StaticWebResources/static/gov3/images/footer_collapsebutton_solid.png" alt="Collapse footer" title="Collapse footer"></a>		
+		</div -->
+	
+		<div id="footerAdminSection">
+			<div id="footerAdminLinksContainer" class="container">
+				<div id="footerAdminLinks" class="row">
+					<ul class="inline">
+						<li id="replicantData_64BB7AFB6346453E96CF3F8EFE745151" data-order="0">
+								<a href="http://www2.gov.bc.ca/gov/content/home" target="_self">Home</a>
+
+</li>														
+						<li id="replicantData_E65457FFB5BF4A589E1291B94B989557" data-order="1">
+								<a href="http://www2.gov.bc.ca/gov/content/about-gov-bc-ca" target="_self">About gov.bc.ca</a>
+
+</li>														
+						<li id="replicantData_2E18DFD9524A4C95A9601ABF261EC70E" data-order="2">
+								<a href="http://www2.gov.bc.ca/gov/content/home/disclaimer" target="_self">Disclaimer</a>
+
+</li>														
+						<li id="replicantData_F960821F16BB43799D89D309EB9C1318" data-order="3">
+								<a href="http://www2.gov.bc.ca/gov/content/home/privacy" target="_self">Privacy</a>
+
+</li>														
+						<li id="replicantData_0123F79F761A47EDB9B7DE8FE4EB591A" data-order="4">
+								<a href="http://www2.gov.bc.ca/gov/content/home/accessibility" target="_self">Accessibility</a>
+
+</li>														
+						<li id="replicantData_68A5C36D97E445EDB9C87F10D9C3472F" data-order="5">
+								<a href="http://www2.gov.bc.ca/gov/content/home/copyright" target="_self">Copyright</a>
+
+</li>														
+						<li id="replicantData_5C329F040B414B62A8802DFC7072C39E" data-order="6">
+								<a href="http://www2.gov.bc.ca/gov/content/home/contact-us" target="_self">Contact Us</a>
+
+</li>														
+						<!-- viewport toggle - set view port cookie and reload current page 
+						<li class="mobileToggle  hidden-lg hidden-md">
+										<a target="_self" href="javascript:location.reload();" onclick="document.cookie = 'forseLargeViewport=true; path=/';">Desktop View</a>
+								</li>
+								 -->
+							</ul>
+				</div>
+			</div>	
+		</div>
+	</div>		
+</div>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://www2.gov.bc.ca/StaticWebResources/static/shared/bootstrap-3.2.0/js/bootstrap.min.js"></script>  
+<script src="js/w3-include-HTML.js"></script>     <!-- http://www.w3schools.com/howto/howto_html_include.asp -->
+<!-- script src="http://www2.gov.bc.ca/StaticWebResources/static/gov3/js/misc.js"></script -->
+
+</body>
+</html>
+
