@@ -1,4 +1,9 @@
 /* HEADER SUPPORT */ 
+
+#logo IMG {
+    height: 65px;
+}
+
 #customizedTitle {
 	color:white; margin-top:10px; font-size:3em; font-family:times-roman;
 }
