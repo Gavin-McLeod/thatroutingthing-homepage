@@ -1,7 +1,7 @@
 /* HEADER SUPPORT */ 
 
 #logo IMG {
-    height: 65px;
+    max-width: 252px
 }
 
 #customizedTitle {
