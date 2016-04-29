@@ -6,6 +6,7 @@
 		corporate: 
 		   misc.js
 		   main.css
+		drvic10k/bootstrap-sortable (for sortable tables) source: https://github.com/drvic10k/bootstrap-sortable 
 		w3-include-HTML.js          (for AJAX file loads) source: http://www.w3schools.com/howto/howto_html_include.asp 
 
 --> 
@@ -21,6 +22,9 @@
     <!-- Bootstrap -->
 <!-- using bootstrap CSS from CMS -->
 <link rel="stylesheet" href="http://www2.gov.bc.ca/StaticWebResources/static/shared/bootstrap-3.2.0/css/bootstrap.min.css">
+
+<!-- add in table sorting CSS -->
+<link rel="stylesheet" href="css/bootstrap-sortable.css">
 
 <!-- modifyDefaults.css contains any deviations in style from corporate -->  
 <link rel="stylesheet" href="css/modifyDefaults.css">
@@ -51,29 +55,35 @@ $( document ).ready( function() {
   </head>
   <body>
 
-<div id="splashbody">
-    <div id="splashheader">  <!-- HEADER -->
-        <img id="logo" src="img/onRouteBC_logo_rev.png" title="OnRouteBC Logo" alt="OnRouteBC Logo">
-    </div>
-    <!-- CONTENT -->
-    <div id="content">
-        <H2 class="blue-heading-bar">Coming soon ...</H1>
-            <div class="promoBox rightColumnBox" style="font-size:150%">
-                <p>Permitting and routing for cargo trucking in British Columbia is getting easier and faster.  A new world class permitting system to take British Columbia carriers into the 21st century and beyond is about to be unveiled.  See it here first!</p>
-                <p>Automatic generation of safe routes based on the vehicle configurations and known route restrictions will mean a faster  permitting process for the industry and loads departing with greater confidence.</p>
+<div id="header" class="collapsed-header">
+<div id="header-main">	<!--  navbar-default navbar-fixed-top -->
+		
+   <div style="display: block; padding: 5px 0px 5px 5px;" class="container">				
+            <div id="logo">
+               <a href="/"><img src="img/onRouteBC_logo_rev.png" alt="Government of B.C." title="Government of B.C."></a>
             </div>
+   </div>
 
-        <div id="featurerow" class="container-fluid">
-            <div class="row">
-                <div class="featurebox col-sm-3 col-xs-6">Ministry of Transportation and Highways</div>
-                <div class="featurebox col-sm-3 col-xs-6">Commercial Transportation Safety and Enforcement</div>
-                <div class="featurebox col-sm-3 col-xs-6">BC On The Move</div>
-                <div class="featurebox col-sm-3 col-xs-6">feature 4</div>
-            </div>
-        </div>
-    </div>
 
-    
+   <!-- div class="navigationRibbon">		
+      <div class="level2Navigation">
+         <div class="container">
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Bulletins, Compliance Circulars, Forms & Notices</a>
+            <a href="">Information & Education</a>
+            <a href="">National Safety Code</a>
+            <a href="">Enforcement</a>
+         </div>
+      </div>					
+   </div -->
+</div>
+      </div>
+
+      <span w3-include-HTML="core.html">
+
+      </span>
+
 <!-- FOOTER START -->
 <div id="footer">
 	<!-- img style="display: inline;" src="http://www2.gov.bc.ca/StaticWebResources/static/gov3/images/back-to-top.png" alt="Back to top" title="Back to top" class="back-to-top footer-overlap" -->
@@ -127,8 +137,7 @@ $( document ).ready( function() {
 	</div>		
 </div>
 
-</div> <!-- end body -->
-      
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://www2.gov.bc.ca/StaticWebResources/static/shared/bootstrap-3.2.0/js/bootstrap.min.js"></script>  
