@@ -52,4 +52,7 @@
 .featurebox {
     height: 200px;
     border: 1px solid #666;
+    background-color:#003366;
+    color:white;
 }
+.featurebox a {color:white;}
