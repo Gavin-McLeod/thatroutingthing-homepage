@@ -46,7 +46,7 @@
 
 #content {
     padding-top:10px;
-    min-height:400px;
+    /* min-height:400px; */
 }
 
 .featurebox {
@@ -54,5 +54,13 @@
     border: 1px solid #666;
     background-color:#003366;
     color:white;
+    
+} 
+
+.featurebox H3{
+    color:white;
 }
-.featurebox a {color:white;}
+
+#featurerow .featurebox {padding:3px;}
+
+.featurebox IMG {min-height:88px;}
