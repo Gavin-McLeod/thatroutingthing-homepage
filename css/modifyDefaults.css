@@ -49,9 +49,10 @@
     /* min-height:400px; */
 }
 
+#featurerow {background-color:#003366; padding-top:8px;}
 .featurebox {
-    height: 200px;
-    border: 1px solid #666;
+    /* height: 200px; 
+    border: 1px solid #666; */
     background-color:#003366;
     color:white;
     
@@ -63,4 +64,14 @@
 
 #featurerow .featurebox {padding:3px;}
 
-.featurebox IMG {min-height:88px;}
+.featurebox IMG {width:100%;min-height:88px; max-width:355px;}
+
+.blue-heading-bar {
+background: #003366; /* Old browsers */
+background: -moz-linear-gradient(top, #003366 0%, #2989d8 100%, #003366 100%, #003366 100%, #2989d8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #003366 0%,#2989d8 100%,#003366 100%,#003366 100%,#2989d8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #003366 0%,#2989d8 100%,#003366 100%,#003366 100%,#2989d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#2989d8',GradientType=0 ); /* IE6-9 */
+copy
+Color format:     Comments
+}
