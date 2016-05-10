@@ -51,8 +51,8 @@
 
 #featurerow {background-color:#003366; padding-top:8px;}
 .featurebox {
-    /* height: 200px; 
-    border: 1px solid #666; */
+    /* min-height: 210px; 
+    border-right: 1px #888 solid; */
     background-color:#003366;
     color:white;
     
@@ -62,7 +62,7 @@
     color:white;
 }
 
-#featurerow .featurebox {padding:3px;}
+#featurerow .featurebox {padding:3px; }
 
 .featurebox IMG {width:100%;min-height:88px; max-width:355px;}
 
